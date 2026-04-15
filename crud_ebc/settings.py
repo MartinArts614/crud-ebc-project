@@ -2,9 +2,9 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'django-insecure-cambio-esto-en-produccion'
-DEBUG = True
-ALLOWED_HOSTS = []
+SECRET_KEY = 'krd(ceq5c!)^in!c#ijw@^8%38bmo40_cr$&$f0an@5t0khgr!'
+DEBUG = False
+ALLOWED_HOSTS = ['MartinRojas.pythonanywhere.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -60,6 +60,7 @@ USE_I18N = True
 USE_TZ = True
 
 STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_DIRS = [BASE_DIR / 'static']
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
